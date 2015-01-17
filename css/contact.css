@@ -1,0 +1,107 @@
+#map{
+	height: 237px;
+}
+
+.sidebar{
+	background-image: none;
+}
+
+.header{
+	color: black;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	width: 100%;
+	background-color: transparent;
+}
+
+html{
+	background-color: #171717;
+}
+
+.header ul#menu li a{
+	color: black;
+	
+}
+
+p{
+	color: white;
+	margin: 1em 0;
+	line-height: 24px;
+	font-family: Georgia, "Cambria", serif;
+}
+
+#contactintro{
+	margin-top: 30px;
+}
+
+/* Form */
+.pure-form input[type="text"], .pure-form textarea{
+	font-family: Georgia, "Cambria", serif;
+    border:none;
+    border-bottom:1px solid rgb(241,	188,	80		);
+    box-shadow: none;
+    border-radius: 0px;
+    padding-bottom:0;
+    outline:none;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: transparent;
+}
+
+.pure-form input[type="text"]:focus, .pure-form textarea:focus{ 
+    border-bottom-color: rgb(230,	130,	38	);
+}
+
+*::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #666;
+}
+*:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #666;
+   opacity:  1;
+}
+*::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #666;
+   opacity:  1;
+}
+*:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #666;
+}
+
+
+.pure-form textarea{
+	height: 300px;
+}
+
+.send-button{
+	background-color: #2ECC40;
+	float: right;
+	color: white;
+}
+
+
+@media (min-width: 48em) {
+
+	
+	.header{
+		top:0px;
+		right:0px;
+		position: absolute;
+		text-align: right;
+	}
+	
+	.header #title{
+	width: 80%;	
+	margin-left: 20%;
+}
+    
+    #map{
+		height: 100%;
+	}
+
+}

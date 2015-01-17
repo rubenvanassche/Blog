@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="My personal blog">
+    <title>Ruben Van Assche - Contact</title>
+	<link rel="stylesheet" href="css/pure.css">
+    <link rel="stylesheet" href="css/pure-responsive.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+<div id="container" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-8-24">
+    	<div id="map"></div> 
+    
+        <div class="header">
+            <h1 id="title">Ruben Van Assche</h1>
+		    <ul id="menu">
+		        <li><a href="index.html">Blog</a></li>
+		        <li><a href="work.html">Work</a></li>
+		        <li class="active"><a href="contact.html">Contact</a></li>
+				<li class="socials">
+					<a href="#"><i class="fa fa-linkedin"></i></a> 
+					<a href="#"><i class="fa fa-twitter"></i></a> 
+					<a href="#"><i class="fa fa-github-alt"></i></a> 
+					<a href="#"><i class="fa fa-rss"></i></a>
+				</li>
+		    </ul>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-16-24">
+    	<p id="contactintro">Hi there! Got something to tell me? Don't hesitate to contact me!</p>
+    	<form  class="pure-form">
+			<input class="pure-input-1" type="text" name="name" placeholder="Who are you?" />
+			<input class="pure-input-1" type="text" name="mail" placeholder="What's your email adres?" />
+			<textarea class="pure-input-1" name="message" placeholder="What do you want to tell me?"></textarea>
+			<input class="pure-button send-button" type="submit" value="Send" name="send">
+    	</form>     
+    </div>
+</div>
+
+<script src="js/leaflet.js"></script>
+<script src="js/leaflet-providers.js"></script>
+<script>
+	var map = L.map('map', { zoomControl:false, attributionControl:false }).setView([51.219, 4.4029], 12);
+	L.tileLayer.provider('Stamen.Watercolor').addTo(map);
+	var greenIcon = L.icon({
+	    iconUrl: 'img/marker.png',
+	
+	    iconSize:     [20, 20], // size of the icon
+	    iconAnchor:   [10, 10], // point of the icon which will correspond to marker's location
+	});
+	L.marker([51.207513, 4.434452], {icon: greenIcon}).addTo(map);
+</script>
+
+</body>
+</html>

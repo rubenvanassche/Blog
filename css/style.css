@@ -1,0 +1,236 @@
+/* Base */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(11,101,161,1);
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+/* Utils */
+
+.divider{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #ededed;
+}
+
+/* Menu */
+ul#menu{
+	list-style-type: none;
+}
+
+ul#menu li{
+	font-weight: 300;
+	display: block;
+	font-size: 26px;
+}
+
+ul#menu li.active{
+	font-weight: 600;
+}
+
+ul#menu li.socials{
+	margin-top: 20px;
+	font-size: 18px;
+	
+}
+
+ul#menu li a{
+	/*color: rgba(99,138,164,1);*/
+	color: white;
+	text-decoration: none;
+}
+
+/* About me */
+
+#about{
+	display: table;
+	margin-bottom: 20px;
+}
+
+#about  img{
+	border-radius: 50px;
+	height: 90px;
+	width: 90px;
+	margin-right: 20px;
+}
+
+#about span {
+    color: grey;
+    font-weight: 300;
+    font-style: italic;
+     vertical-align: middle;
+    display: table-cell;
+    font-size: 16px;
+}
+
+
+/* LAYOUT CSS */
+container {
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    top: auto;
+    margin: 3em auto;
+}
+
+.sidebar {
+    background-image: url("../img/sidebar/114H.jpg");
+    background-size: cover;
+    color: #fff;
+}
+
+ 
+.sidebar #title {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 30px;
+}
+
+.content {
+    padding: 20px 50px 0;
+}
+
+.posts{
+	margin-top: 20px;
+}
+
+.post {
+    padding-bottom: 30px;
+}
+.post-title a {
+    font-size: 40px;
+    color: #222;
+    text-decoration: none;
+	font-weight: bold;
+}
+
+.post-description {
+    font-family: Georgia, "Cambria", serif;
+    color: #444;
+    line-height: 24px;
+}
+.post-date {
+    color: #999;
+    font-size: 90%;
+    margin-top: 4px;
+}
+
+.post-tag {
+    margin: 0;
+    padding: 3px 6px;
+    color: #fff;
+    background: #999;
+    font-size: 10px;
+    float: right;
+}
+
+.post-tag.navy {
+  background:  #001F3F; }
+.post-tag.blue {
+  background: #0074D9; }
+
+.post-tag.aqua {
+  background: #7FDBFF; }
+
+.post-tag.teal {
+  background: #39CCCC; }
+
+.post-tag.olive {
+  background: #3D9970; }
+
+.post-tag.green {
+  background: #2ECC40; }
+
+.post-tag.lime {
+  background: #01FF70; }
+
+.post-tag.yellow {
+  background: #FFDC00; }
+
+.post-tag.orange {
+  background: #FF851B; }
+
+.post-tag.red {
+  background: #FF4136; }
+
+.post-tag.fuchsia {
+  background: #F012BE; }
+
+.post-tag.purple {
+  background: #B10DC9; }
+
+.post-tag.maroon {
+  background: #85144B; }
+
+.post-tag.white {
+  background: #fff; }
+
+.post-tag.silver {
+  background: #ddd; }
+
+.post-tag.gray {
+  background: #aaa; }
+
+.post-tag.black {
+  background: #111; }
+  
+/* Tag Page */
+.page-title{
+    font-size: 50px;
+    color: #222;
+	font-weight: bold;
+}
+
+.tagposts{
+	margin-top: 20px;
+}
+
+.tagposts table{
+	width: 100%;
+}
+
+.tagposts .title a{
+	text-decoration: none;
+	color: black;
+}
+
+
+.tagposts .date a{
+	float: left;
+	color: gray;
+	width: 100px;
+	text-decoration: none;
+}
+
+
+
+@media (min-width: 48em) {
+    .content {
+        margin-left: 33.33%;
+    }
+
+    .header {
+        margin: 40px 40px 0;
+        text-align: right;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+    }
+
+
+}
